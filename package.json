@@ -1,7 +1,7 @@
 {
   "name": "@ottofeller/epubjs-rn",
-  "version": "0.2.37",
-  "repository": "https://github.com/ottofeller/epubjs-rn",
+  "version": "0.2.38",
+  "repository": "https://github.com/Arnoldnuo/epubjs-rn",
   "main": "./components/index.js",
   "private": false,
   "scripts": {
@@ -26,7 +26,6 @@
     "lodash": "4.17.15",
     "path-webpack": "0.0.3",
     "react": "16.11.0",
-    "react-native": "0.62.2",
     "react-native-static-server": "0.5.0",
     "react-native-webview": "9.4.0",
     "react-native-zip-archive": "5.0.2",
@@ -51,6 +50,7 @@
     "metro-react-native-babel-preset": "0.59.0",
     "babel-jest": "24.8.0",
     "jest": "24.8.0",
+    "react-native": "0.62.2",
     "react-test-renderer": "16.11.0"
   },
   "files": [
