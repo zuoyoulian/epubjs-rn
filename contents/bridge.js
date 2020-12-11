@@ -63,6 +63,10 @@ window.onerror = function (message, file, line, col, error) {
             link.href = options.webviewStylesheet;
             head.appendChild(link);
           }
+          if (options && options.css) {
+            var sheet = window.document.styleSheets[0];
+            sheet.insertRule(options.css, sheet.cssRules.length);
+          }
 
           break;
         }
