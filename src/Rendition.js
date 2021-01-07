@@ -28,6 +28,7 @@ const EMBEDDED_HTML = `
   <script>${process.env.POLYFILL}</script>
   <script>${process.env.EPUBJS}</script>
   <script>${process.env.BRIDGE}</script>
+  <script>__JS__</script>
   <style>
     body {
       margin: 0;
@@ -443,7 +444,7 @@ class Rendition extends Component {
           showsHorizontalScrollIndicator={this.props.showsHorizontalScrollIndicator}
           showsVerticalScrollIndicator={this.props.showsVerticalScrollIndicator}
           ref={this.webviewbridgeRef}
-          source={{html: EMBEDDED_HTML, baseUrl: this.props.url}}
+          source={{html: EMBEDDED_HTML.replace('__JS__', this.props.js || ''), baseUrl: this.props.url}}
           style={[styles.manager, {
             backgroundColor: this.props.backgroundColor || "#FFFFFF"
           }]}
