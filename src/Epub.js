@@ -344,6 +344,7 @@ class Epub extends Component{
         onLongPress={(this.props.onLongPress)}
         onDblPress={(this.props.onDblPress)}
         onViewAdded={this.props.onViewAdded}
+        onExtendEvent={this.props.onExtendEvent}
         beforeViewRemoved={this.props.beforeViewRemoved}
         themes={this.props.themes}
         theme={this.props.theme}

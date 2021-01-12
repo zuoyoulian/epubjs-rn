@@ -384,7 +384,11 @@ class Rendition extends Component {
         break;
       }
       default: {
-        console.log("msg", decoded);
+        if (this.props.onExtendEvent[decoded.method]) {
+            this.props.onExtendEvent[decoded.method](decoded);
+        } else {
+            console.log("msg", decoded);
+        }
       }
     }
   }
