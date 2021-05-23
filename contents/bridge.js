@@ -249,7 +249,7 @@ window.onerror = function (message, file, line, col, error) {
 
     function openEpub(url, options) {
       var settings = Object.assign({
-        // manager: "continuous",
+        manager: "continuous",
         overflow: "visible",
         method: "blobUrl",
         fullsize: true,
